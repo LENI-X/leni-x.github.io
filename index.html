@@ -7,16 +7,19 @@
       
         h1{
             font-family: "Faculty Glyphic", sans-serif;
-            font-weight: 400;
+            font-weight: 500;
             font-style: normal;
-            margin-bottom: 50px;
+            margin-bottom: 10px;
             padding: 0px;
             
         }
         p{
-            font-family: "Righteous", sans-serif;
-            font-weight: 400;
+            font-family: "Doto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 596;
             font-style: normal;
+            font-variation-settings:
+            "ROND" 0;
             margin: 0px;
             padding: 0px;
             
@@ -101,6 +104,61 @@
             margin-top: 0.2rem;
             margin-right: 0.4rem;
         }
+        .fluid-container {
+            width: 80%;
+            height: 300px;
+            margin: 30px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+            background-image: linear-gradient(75deg, blue, violet, indigo);
+            background-size: 300% 300%;
+            animation: fluidGradient 12s ease infinite, morphShape 15s ease-in-out infinite alternate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes morphShape {
+            0% {
+                border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+            }
+            25% {
+                border-radius: 30% 70% 70% 30% / 40% 40% 60% 60%;
+            }
+            50% {
+                border-radius: 50% 50% 40% 60% / 30% 60% 40% 70%;
+            }
+            75% {
+                border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
+            }
+            100% {
+                border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+            }
+        }
+        .fluid-article {
+            width: 90%;
+            height: 80%;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            padding: 20px;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+            position: relative;
+            z-index: 1;
+        }
+        .fluid-article h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #4b0082;
+        }
+        
+        .fluid-article p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+            color: blue;
+        }
 
     </style>
 
@@ -112,32 +170,32 @@
     <section>
         <article>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMlLuoWFCVHsCHhudtAGsgmgcOLx_nwQpSdaGV6Fh73AN5qw/viewform?usp=dialog">
-                <h1>Analysis</h1>
-                <p>XAUUSD trend 1963-2020</p>
+                <h1>Summer Tech Explorer</h1>
+                <p>Learn, Create and Explore</p>
             </a>
         </article>
         <article>
             <a href="https://example.com/analysis2">
-                <h1>Analysis</h1>
-                <p>The article of another choice</p>
+                <h1>Data Science</h1>
+                <p>Data is the new oil</p>
             </a>
         </article>
         <article>
             <a href="https://example.com/analysis3">
-                <h1>Analysis</h1>
-                <p>The article of final choice</p>
+                <h1>Data Analysis</h1>
+                <p>Hop on to the trend!</p>
             </a>
         </article>
         <article>
             <a href="https://example.com/analysis4">
-                <h1>Analysis</h1>
-                <p>The article the choice reinvented</p>
+                <h1>Web Dev</h1>
+                <p>Know the Basics and Beyond of the Web</p>
             </a>
         </article>
         <article>
             <a href="https://example.com/analysis5">
-                <h1>Analysis</h1>
-                <p>The article the choice reinvented</p>
+                <h1>Programming</h1>
+                <p>Command the Machine to work!</p>
             </a>
         </article>
         <article>
@@ -165,6 +223,14 @@
             </a>
         </article>
     </section>
+    <div class="fluid-container">
+        <div class="fluid-article">
+            <h2>Featured Analysis</h2>
+            <p>The financial markets have shown significant volatility in recent years, with precious metals like gold (XAUUSD) demonstrating their continued relevance as a safe haven asset during times of economic uncertainty.</p>
+            <p>Our analysis tracks historical trends from 1963 through 2020, revealing interesting patterns in how gold prices respond to global economic events, inflation rates, and geopolitical tensions.</p>
+            <p>The data indicates that while short-term fluctuations can be unpredictable, the long-term trajectory of gold has consistently provided a hedge against currency devaluation and market instability.</p>
+        </div>
+    </div>
     <div class="ready">
 
     </div>
