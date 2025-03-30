@@ -1,26 +1,90 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <style>
+        header{
+            background-color: blueviolet;
+            height: 10%;
+            
+        }
+        article{
+            background-color: pink;
+            margin-right: 0.2rem;
+            margin-top: 0.2rem;
+            height: 120px;
+            width: 100px;
+            flex: 1;
+            transition: all 0.4s ease-in;
+            overflow: hidden;
+        }
+        article:nth-of-type(n):hover{
+            flex: 4;
+        }
+        section{
+            zoom: 1.5;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+
+        }
+        .ready{
+            height: 100vh;
+            width: 100%;
+            background-color:blueviolet;
+            margin-top: 0.2rem;
+            margin-right: 0.4rem;
+        }
+
+    </style>
     <title>Portfolio</title>
   </head>
+
   <body>
-    <div class="container">
+    <header></header>
+    <section>
+        <article>
+            <h1>Analysis</h1>
+            <p>XAUUSD trend 1963-2020</p>
+        </article>
+        <article>
+            <h1>Analysis</h1>
+            <p>The article of another choice</p>
 
-      <div class="header">
-        
-      </div>
-      <div class="sidebar">
-        <img src="assests/Untitled.jpg" alt="Jagadish Prasad Gouda" height="202" width="202">
-      </div>
-      <div class="content">
-        
-      </div>
-      <div class="footer">
-        
-      </div>
-    </div>
-    <div class="showcase">
+        </article>
+        <article>
+            <h1>Analysis</h1>
+            <p>The article of final choice</p>
+        </article>
+        <article>
+            <h1>Analysis</h1>
+            <p>The article the choice reinvented</p>
+        </article>
+        <article>
+            <h1>Analysis</h1>
+            <p>The article the choice reinvented</p>
+        </article>
+        <article>
+            <h1>Analysis</h1>
+            <p>The article the choice reinvented</p>
+        </article>
+        <article>
+            <h1>Analysis</h1>
+            <p>The article the choice reinvented</p>
+        </article>
+        <article>
+            <h1>Analysis</h1>
+            <p>The article the choice reinvented</p>
+        </article>
+        <article>
+            <h1>Analysis</h1>
+            <p>The article the choice reinvented</p>
+        </article>
+
+
+    </section>
+    <div class="ready">
 
     </div>
-    </body>
+  </body>
+    
+
 </html>
