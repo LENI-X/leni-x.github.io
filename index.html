@@ -1,22 +1,48 @@
 <html>
   <head>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Faculty+Glyphic&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Faculty+Glyphic&family=Righteous&display=swap');
+      
+        h1{
+            font-family: "Faculty Glyphic", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        p{
+            font-family: "Righteous", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0px;
+            padding: 0px;
+            
+        }
         header{
             background-color: blueviolet;
             height: 10%;
             
         }
         article{
-            background-color: pink;
+            background-color: yellow;
             margin-right: 0.2rem;
             margin-top: 0.2rem;
             height: 120px;
             width: 100px;
             flex: 1;
+            color: white;
             transition: all 0.4s ease-in;
             overflow: hidden;
             cursor: pointer; /* Change cursor to indicate clickable */
             position: relative;
+            background-image: linear-gradient(75deg, blue, violet, indigo);
+            background-size: 200% 200%;
+            opacity: 1;
+            /* Add transition for background properties */
+            transition: flex 0.4s ease-in, background-position 0.4s ease-in, animation 0.4s ease-in;
         }
         article a {
             position: absolute;
@@ -31,9 +57,34 @@
             padding: 10px;
             box-sizing: border-box;
         }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 25%;
+            }
+            25% {
+                background-position: 25% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            75% {
+                background-position: 50% 100%;
+            }
+            100% {
+                background-position: 0% 25%;
+            }
+        }
+        article:nth-of-type(n){
+            background-image: linear-gradient(100deg, blue, blue, blue);
+            background-size: 200% 200%;
+        }
 
         article:nth-of-type(n):hover{
-            flex: 4;
+            flex: 2;
+            background-image: linear-gradient(180deg, blue, indigo, indigo);
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s linear infinite;
+            
         }
         
         section{
